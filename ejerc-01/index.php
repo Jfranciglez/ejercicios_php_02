@@ -22,6 +22,7 @@
                 6.95
             </p>
             <input type="number" name="productos[Hamburguesa vegana]" min="1">
+            
             <div id="pasta">
                 <img src="pasta.png">
             </div>
@@ -108,7 +109,7 @@
 
             }
         }
-        echo "<tr><td colspan='3'><strong>Total</strong></td><td><strong>€$total</strong></td></tr>";
+        echo "<tr><td colspan='3'><strong>Total</strong></td><td><strong>€ $total</strong></td></tr>";
         echo "</table>";
     }
     ?>

@@ -1,14 +1,85 @@
+html{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(236, 240, 10);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
 #principal{
-    width: 800px;
+    width: auto;
     height: auto;
     margin: 50px;
     padding: 50px;
     text-align: center;
-    justify-content: center;
+    
   
 }
-#img{
+/*imágenes a la izquierda*/
+img{
     display: flex;
-    flex-direction: row;
+    justify-content: flex-start;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     
+}
+/*input a la derecha*/
+p input {
+    
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    
+}
+h2{
+    text-align: center;
+}
+
+input{
+    background-color:rgb(235, 237, 107); 
+    border-radius: 20px;
+}
+
+
+table {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Encabezados */
+th {
+  background-color: rgb(235, 237, 107);
+  color: black;
+  padding: 12px;
+  text-align: left;
+}
+
+/* Celdas */
+td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Fila de total */
+tr:last-child td {
+  font-weight: bold;
+  background-color: #f0f0f0;
+  border-top: 2px solid black;
+}
+
+/* Alternancia de filas */
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Hover en filas */
+tr:hover {
+  background-color: rgb(235, 237, 107);
 }
